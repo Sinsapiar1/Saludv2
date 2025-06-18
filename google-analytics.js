@@ -3,7 +3,7 @@
 // ===== CONFIGURACIÓN =====
 const GA_CONFIG = {
     // Reemplaza con tu ID real de Google Analytics
-    measurementId: 'G-XXXXXXXXXX',
+    measurementId: 'G-2R9V4ZC0XM',
     
     // Configuración de enhanced ecommerce
     currency: 'USD',
