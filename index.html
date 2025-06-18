@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Transform your health with VitalLife - The revolutionary supplement trusted by thousands for energy, immunity, and vitality.">
+    <meta name="keywords" content="health, supplement, energy, immunity, vitality, organic, FDA approved">
+    <title>VitalLife - Your Path to Optimal Health</title>
+    
+    <!-- Preload critical fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Microsoft Clarity - Reemplaza CLARITY_PROJECT_ID con tu ID real -->
+    <script type="text/javascript">
+        (function(c,l,a,r,i,t,y){
+            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+        })(window, document, "clarity", "script", "CLARITY_PROJECT_ID");
+    </script>
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading-screen">
+        <div class="loading-spinner">
+            <div class="spinner"></div>
+            <p>Loading your health transformation...</p>
+        </div>
+    </div>
+
+    <!-- Language Selector -->
+    <div class="language-selector">
+        <button id="langToggle" data-lang="en" class="glass-button">
+            <span class="lang-icon">🌐</span>
+            <span class="lang-en">EN</span>
+            <span class="lang-es" style="display:none;">ES</span>
+        </button>
+    </div>
+
+    <!-- Progress Bar -->
+    <div class="scroll-progress">
+        <div class="progress-bar"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <img src="logo-vitallife.svg" alt="VitalLife" class="logo">
+                <span class="brand-text">VitalLife</span>
+            </div>
+            <div class="nav-links">
+                <a href="#benefits" class="nav-link">Benefits</a>
+                <a href="#features" class="nav-link">Features</a>
+                <a href="#results" class="nav-link">Results</a>
+                <a href="#pricing" class="nav-link">Pricing</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-background">
+            <div class="floating-elements">
+                <div class="float-element float-1"></div>
+                <div class="float-element float-2"></div>
+                <div class="float-element float-3"></div>
+            </div>
+        </div>
+        
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="badge-icon">✨</span>
+                    <span class="lang-en">Revolutionary Health Formula</span>
+                    <span class="lang-es" style="display:none;">Fórmula Revolucionaria de Salud</span>
+                </div>
+                
+                <h1 class="hero-title">
+                    <span class="lang-en">Transform Your Health,<br><span class="text-gradient">Transform Your Life</span></span>
+                    <span class="lang-es" style="display:none;">Transforma Tu Salud,<br><span class="text-gradient">Transforma Tu Vida</span></span>
+                </h1>
+                
+                <p class="hero-subtitle">
+                    <span class="lang-en">Discover the revolutionary supplement that thousands are using to reclaim their energy, vitality, and well-being with scientifically-proven ingredients.</span>
+                    <span class="lang-es" style="display:none;">Descubre el suplemento revolucionario que miles están usando para recuperar su energía, vitalidad y bienestar con ingredientes científicamente probados.</span>
+                </p>
+                
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <div class="stat-number">50K+</div>
+                        <div class="stat-label lang-en">Happy Customers</div>
+                        <div class="stat-label lang-es" style="display:none;">Clientes Felices</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">98%</div>
+                        <div class="stat-label lang-en">Success Rate</div>
+                        <div class="stat-label lang-es" style="display:none;">Tasa de Éxito</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">60</div>
+                        <div class="stat-label lang-en">Day Guarantee</div>
+                        <div class="stat-label lang-es" style="display:none;">Días de Garantía</div>
+                    </div>
+                </div>
+                
+                <div class="hero-cta">
+                    <a href="https://affiliate-link-1.com" class="cta-primary affiliate-link" data-link-id="hero-main-cta" data-clarity-track="hero-cta">
+                        <span class="cta-text">
+                            <span class="lang-en">Start Your Transformation</span>
+                            <span class="lang-es" style="display:none;">Comienza Tu Transformación</span>
+                        </span>
+                        <span class="cta-icon">→</span>
+                    </a>
+                    
+                    <button class="cta-secondary" id="watchVideoBtn">
+                        <span class="play-icon">▶</span>
+                        <span class="lang-en">Watch How It Works</span>
+                        <span class="lang-es" style="display:none;">Ver Cómo Funciona</span>
+                    </button>
+                </div>
+            </div>
+            
+            <div class="hero-image">
+                <div class="product-showcase">
+                    <img src="product-image.jpg" alt="VitalLife Supplement" class="product-img">
+                    <div class="floating-badges">
+                        <div class="floating-badge badge-1">
+                            <span class="lang-en">FDA Approved</span>
+                            <span class="lang-es" style="display:none;">Aprobado FDA</span>
+                        </div>
+                        <div class="floating-badge badge-2">
+                            <span class="lang-en">100% Organic</span>
+                            <span class="lang-es" style="display:none;">100% Orgánico</span>
+                        </div>
+                        <div class="floating-badge badge-3">
+                            <span class="lang-en">Lab Tested</span>
+                            <span class="lang-es" style="display:none;">Probado en Lab</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <span class="scroll-text lang-en">Scroll to discover more</span>
+            <span class="scroll-text lang-es" style="display:none;">Desliza para descubrir más</span>
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="benefits" id="benefits">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="lang-en">Experience These <span class="text-gradient">Life-Changing Benefits</span></span>
+                    <span class="lang-es" style="display:none;">Experimenta Estos <span class="text-gradient">Beneficios Transformadores</span></span>
+                </h2>
+                <p class="section-subtitle">
+                    <span class="lang-en">Scientifically formulated to optimize your body's natural processes</span>
+                    <span class="lang-es" style="display:none;">Formulado científicamente para optimizar los procesos naturales de tu cuerpo</span>
+                </p>
+            </div>
+            
+            <div class="benefits-grid">
+                <div class="benefit-card" data-clarity-track="benefit-energy">
+                    <div class="benefit-icon">
+                        <div class="icon-bg energy-bg">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <h3 class="benefit-title">
+                        <span class="lang-en">Boosted Energy</span>
+                        <span class="lang-es" style="display:none;">Energía Potenciada</span>
+                    </h3>
+                    <p class="benefit-description">
+                        <span class="lang-en">Feel more energized throughout the day without crashes or jitters, powered by natural adaptogens</span>
+                        <span class="lang-es" style="display:none;">Siéntete más energizado durante todo el día sin caídas ni nerviosismo, potenciado por adaptógenos naturales</span>
+                    </p>
+                    <a href="https://affiliate-link-2.com" class="benefit-link affiliate-link" data-link-id="benefit-1-link">
+                        <span class="lang-en">Learn how it works</span>
+                        <span class="lang-es" style="display:none;">Aprende cómo funciona</span>
+                        <span class="link-arrow">→</span>
+                    </a>
+                </div>
+                
+                <div class="benefit-card" data-clarity-track="benefit-immunity">
+                    <div class="benefit-icon">
+                        <div class="icon-bg immunity-bg">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <h3 class="benefit-title">
+                        <span class="lang-en">Enhanced Immunity</span>
+                        <span class="lang-es" style="display:none;">Inmunidad Mejorada</span>
+                    </h3>
+                    <p class="benefit-description">
+                        <span class="lang-en">Strengthen your body's natural defenses with our powerful immune-boosting formula</span>
+                        <span class="lang-es" style="display:none;">Fortalece las defensas naturales de tu cuerpo con nuestra potente fórmula que estimula la inmunidad</span>
+                    </p>
+                    <a href="https://affiliate-link-3.com" class="benefit-link affiliate-link" data-link-id="benefit-2-link">
+                        <span class="lang-en">See the ingredients</span>
+                        <span class="lang-es" style="display:none;">Ver los ingredientes</span>
+                        <span class="link-arrow">→</span>
+                    </a>
+                </div>
+                
+                <div class="benefit-card" data-clarity-track="benefit-sleep">
+                    <div class="benefit-icon">
+                        <div class="icon-bg sleep-bg">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <h3 class="benefit-title">
+                        <span class="lang-en">Improved Sleep</span>
+                        <span class="lang-es" style="display:none;">Mejor Sueño</span>
+                    </h3>
+                    <p class="benefit-description">
+                        <span class="lang-en">Enjoy deeper, more restful sleep that leaves you refreshed and rejuvenated every morning</span>
+                        <span class="lang-es" style="display:none;">Disfruta de un sueño más profundo y reparador que te deja renovado y rejuvenecido cada mañana</span>
+                    </p>
+                    <a href="https://affiliate-link-4.com" class="benefit-link affiliate-link" data-link-id="benefit-3-link">
+                        <span class="lang-en">Discover the science</span>
+                        <span class="lang-es" style="display:none;">Descubre la ciencia</span>
+                        <span class="link-arrow">→</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="lang-en">Why VitalLife Is <span class="text-gradient">Different</span></span>
+                    <span class="lang-es" style="display:none;">Por Qué VitalLife Es <span class="text-gradient">Diferente</span></span>
+                </h2>
+            </div>
+            
+            <div class="features-container">
+                <div class="feature-item">
+                    <div class="feature-content">
+                        <div class="feature-number">01</div>
+                        <h3 class="feature-title">
+                            <span class="lang-en">Science-Backed Formula</span>
+                            <span class="lang-es" style="display:none;">Fórmula Respaldada por la Ciencia</span>
+                        </h3>
+                        <p class="feature-description">
+                            <span class="lang-en">Our unique blend of adaptogens, vitamins, and minerals is based on over 50 clinical studies to optimize your body's natural processes and maximize bioavailability.</span>
+                            <span class="lang-es" style="display:none;">Nuestra mezcla única de adaptógenos, vitaminas y minerales está basada en más de 50 estudios clínicos para optimizar los procesos naturales de tu cuerpo y maximizar la biodisponibilidad.</span>
+                        </p>
+                        <a href="https://affiliate-link-5.com" class="feature-cta affiliate-link" data-link-id="feature-1-link">
+                            <span class="lang-en">Read the Research</span>
+                            <span class="lang-es" style="display:none;">Leer la Investigación</span>
+                        </a>
+                    </div>
+                    <div class="feature-visual">
+                        <div class="visual-card">
+                            <img src="feature-science.jpg" alt="Scientific Research" class="feature-image">
+                            <div class="visual-overlay">
+                                <div class="research-stats">
+                                    <div class="stat">50+ Studies</div>
+                                    <div class="stat">99.9% Purity</div>
+                                    <div class="stat">3rd Party Tested</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="feature-item reverse">
+                    <div class="feature-content">
+                        <div class="feature-number">02</div>
+                        <h3 class="feature-title">
+                            <span class="lang-en">Premium Quality Ingredients</span>
+                            <span class="lang-es" style="display:none;">Ingredientes de Calidad Premium</span>
+                        </h3>
+                        <p class="feature-description">
+                            <span class="lang-en">We source only the highest quality, organic ingredients from certified farms worldwide and test each batch for purity and potency in our state-of-the-art laboratory.</span>
+                            <span class="lang-es" style="display:none;">Obtenemos solo ingredientes orgánicos de la más alta calidad de granjas certificadas en todo el mundo y probamos cada lote para verificar su pureza y potencia en nuestro laboratorio de última generación.</span>
+                        </p>
+                        <a href="https://affiliate-link-6.com" class="feature-cta affiliate-link" data-link-id="feature-2-link">
+                            <span class="lang-en">View Certification</span>
+                            <span class="lang-es" style="display:none;">Ver Certificación</span>
+                        </a>
+                    </div>
+                    <div class="feature-visual">
+                        <div class="visual-card">
+                            <img src="feature-ingredients.jpg" alt="Premium Ingredients" class="feature-image">
+                            <div class="visual-overlay">
+                                <div class="certification-badges">
+                                    <span class="cert-badge">Organic</span>
+                                    <span class="cert-badge">Non-GMO</span>
+                                    <span class="cert-badge">GMP</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Results Section -->
+    <section class="results" id="results">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="lang-en">Real Results from <span class="text-gradient">Real People</span></span>
+                    <span class="lang-es" style="display:none;">Resultados Reales de <span class="text-gradient">Personas Reales</span></span>
+                </h2>
+                <p class="section-subtitle">
+                    <span class="lang-en">Join thousands who have transformed their health with VitalLife</span>
+                    <span class="lang-es" style="display:none;">Únete a miles que han transformado su salud con VitalLife</span>
+                </p>
+            </div>
+            
+            <div class="testimonials-container">
+                <div class="testimonial-card" data-clarity-track="testimonial-sarah">
+                    <div class="testimonial-header">
+                        <div class="user-avatar">
+                            <img src="avatar-sarah.jpg" alt="Sarah's transformation">
+                        </div>
+                        <div class="user-info">
+                            <h4 class="user-name">Sarah M.</h4>
+                            <div class="user-location">
+                                <span class="lang-en">Marketing Executive, NYC</span>
+                                <span class="lang-es" style="display:none;">Ejecutiva de Marketing, NYC</span>
+                            </div>
+                            <div class="rating">★★★★★</div>
+                        </div>
+                    </div>
+                    <blockquote class="testimonial-text">
+                        <span class="lang-en">"After just one month, my energy levels are through the roof. I no longer need afternoon coffee, and I'm sleeping better than I have in years! VitalLife has truly transformed my daily routine."</span>
+                        <span class="lang-es" style="display:none;">"Después de solo un mes, mis niveles de energía están por las nubes. Ya no necesito café por la tarde, ¡y estoy durmiendo mejor de lo que he dormido en años! VitalLife realmente ha transformado mi rutina diaria."</span>
+                    </blockquote>
+                    <div class="transformation-stats">
+                        <div class="stat">
+                            <span class="stat-value">+87%</span>
+                            <span class="stat-label lang-en">Energy Increase</span>
+                            <span class="stat-label lang-es" style="display:none;">Aumento de Energía</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-value">30</span>
+                            <span class="stat-label lang-en">Days</span>
+                            <span class="stat-label lang-es" style="display:none;">Días</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card" data-clarity-track="testimonial-michael">
+                    <div class="testimonial-header">
+                        <div class="user-avatar">
+                            <img src="avatar-michael.jpg" alt="Michael's transformation">
+                        </div>
+                        <div class="user-info">
+                            <h4 class="user-name">Michael R.</h4>
+                            <div class="user-location">
+                                <span class="lang-en">Software Engineer, SF</span>
+                                <span class="lang-es" style="display:none;">Ingeniero de Software, SF</span>
+                            </div>
+                            <div class="rating">★★★★★</div>
+                        </div>
+                    </div>
+                    <blockquote class="testimonial-text">
+                        <span class="lang-en">"I used to catch every cold going around the office. Since starting VitalLife, I haven't been sick once in six months. My immune system feels bulletproof!"</span>
+                        <span class="lang-es" style="display:none;">"Solía contraer todos los resfriados que circulaban por la oficina. Desde que comencé con VitalLife, no me he enfermado ni una vez en seis meses. ¡Mi sistema inmunológico se siente a prueba de balas!"</span>
+                    </blockquote>
+                    <div class="transformation-stats">
+                        <div class="stat">
+                            <span class="stat-value">0</span>
+                            <span class="stat-label lang-en">Sick Days</span>
+                            <span class="stat-label lang-es" style="display:none;">Días de Enfermedad</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-value">6</span>
+                            <span class="stat-label lang-en">Months</span>
+                            <span class="stat-label lang-es" style="display:none;">Meses</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="results-cta">
+                <a href="https://affiliate-link-7.com" class="cta-primary affiliate-link" data-link-id="testimonial-cta">
+                    <span class="cta-text">
+                        <span class="lang-en">Start Your Transformation Today</span>
+                        <span class="lang-es" style="display:none;">Comienza Tu Transformación Hoy</span>
+                    </span>
+                    <span class="cta-icon">→</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Guarantee Section -->
+    <section class="guarantee">
+        <div class="container">
+            <div class="guarantee-card">
+                <div class="guarantee-icon">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke="currentColor" stroke-width="2"/>
+                        <path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </div>
+                <h2 class="guarantee-title">
+                    <span class="lang-en">100% Money Back Guarantee</span>
+                    <span class="lang-es" style="display:none;">Garantía de Devolución del 100%</span>
+                </h2>
+                <p class="guarantee-text">
+                    <span class="lang-en">We're so confident you'll love VitalLife that we offer a 60-day, no-questions-asked money back guarantee. If you don't see results, we'll refund every penny.</span>
+                    <span class="lang-es" style="display:none;">Estamos tan seguros de que te encantará VitalLife que ofrecemos una garantía de devolución de dinero de 60 días sin hacer preguntas. Si no ves resultados, te devolveremos hasta el último centavo.</span>
+                </p>
+                <div class="guarantee-features">
+                    <div class="feature">
+                        <span class="feature-icon">✓</span>
+                        <span class="lang-en">60-Day Trial</span>
+                        <span class="lang-es" style="display:none;">Prueba de 60 Días</span>
+                    </div>
+                    <div class="feature">
+                        <span class="feature-icon">✓</span>
+                        <span class="lang-en">No Questions Asked</span>
+                        <span class="lang-es" style="display:none;">Sin Preguntas</span>
+                    </div>
+                    <div class="feature">
+                        <span class="feature-icon">✓</span>
+                        <span class="lang-en">Full Refund</span>
+                        <span class="lang-es" style="display:none;">Reembolso Completo</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing" id="pricing">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="lang-en">Ready to Transform <span class="text-gradient">Your Health?</span></span>
+                    <span class="lang-es" style="display:none;">¿Listo para Transformar <span class="text-gradient">tu Salud?</span></span>
+                </h2>
+                <p class="section-subtitle">
+                    <span class="lang-en">Join thousands of satisfied customers who have already experienced the VitalLife difference</span>
+                    <span class="lang-es" style="display:none;">Únete a miles de clientes satisfechos que ya han experimentado la diferencia VitalLife</span>
+                </p>
+            </div>
+            
+            <div class="pricing-container">
+                <div class="pricing-card featured" data-clarity-track="pricing-main">
+                    <div class="pricing-badge">
+                        <span class="lang-en">Most Popular</span>
+                        <span class="lang-es" style="display:none;">Más Popular</span>
+                    </div>
+                    
+                    <div class="pricing-header">
+                        <h3 class="pricing-title">
+                            <span class="lang-en">VitalLife Premium</span>
+                            <span class="lang-es" style="display:none;">VitalLife Premium</span>
+                        </h3>
+                        <div class="pricing-subtitle">
+                            <span class="lang-en">3-Month Supply</span>
+                            <span class="lang-es" style="display:none;">Suministro de 3 Meses</span>
+                        </div>
+                    </div>
+                    
+                    <div class="pricing-price">
+                        <div class="price-original">
+                            <span class="lang-en">Regular: $269.97</span>
+                            <span class="lang-es" style="display:none;">Regular: $269.97</span>
+                        </div>
+                        <div class="price-current">$179.99</div>
+                        <div class="price-savings">
+                            <span class="lang-en">Save $89.98 (33% OFF)</span>
+                            <span class="lang-es" style="display:none;">Ahorra $89.98 (33% DESC)</span>
+                        </div>
+                        <div class="price-per-bottle">
+                            <span class="lang-en">Just $59.99 per bottle</span>
+                            <span class="lang-es" style="display:none;">Solo $59.99 por frasco</span>
+                        </div>
+                    </div>
+                    
+                    <div class="pricing-features">
+                        <div class="feature">
+                            <span class="feature-icon">✓</span>
+                            <span class="lang-en">3 Bottles (90-day supply)</span>
+                            <span class="lang-es" style="display:none;">3 Frascos (suministro de 90 días)</span>
+                        </div>
+                        <div class="feature">
+                            <span class="feature-icon">✓</span>
+                            <span class="lang-en">FREE Shipping & Handling</span>
+                            <span class="lang-es" style="display:none;">Envío y Manejo GRATIS</span>
+                        </div>
+                        <div class="feature">
+                            <span class="feature-icon">✓</span>
+                            <span class="lang-en">60-Day Money Back Guarantee</span>
+                            <span class="lang-es" style="display:none;">Garantía de 60 Días</span>
+                        </div>
+                        <div class="feature">
+                            <span class="feature-icon">✓</span>
+                            <span class="lang-en">FREE Health & Wellness Guide</span>
+                            <span class="lang-es" style="display:none;">Guía de Salud y Bienestar GRATIS</span>
+                        </div>
+                    </div>
+                    
+                    <a href="https://affiliate-link-8.com" class="pricing-cta affiliate-link" data-link-id="final-main-cta">
+                        <span class="cta-text">
+                            <span class="lang-en">Get VitalLife Now</span>
+                            <span class="lang-es" style="display:none;">Obtén VitalLife Ahora</span>
+                        </span>
+                        <span class="cta-icon">→</span>
+                    </a>
+                    
+                    <div class="trust-indicators">
+                        <div class="trust-item">
+                            <span class="trust-icon">🔒</span>
+                            <span class="lang-en">Secure Checkout</span>
+                            <span class="lang-es" style="display:none;">Pago Seguro</span>
+                        </div>
+                        <div class="trust-item">
+                            <span class="trust-icon">🚚</span>
+                            <span class="lang-en">Fast Delivery</span>
+                            <span class="lang-es" style="display:none;">Entrega Rápida</span>
+                        </div>
+                        <div class="trust-item">
+                            <span class="trust-icon">🛡️</span>
+                            <span class="lang-en">Privacy Protected</span>
+                            <span class="lang-es" style="display:none;">Privacidad Protegida</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="logo-vitallife.svg" alt="VitalLife" class="footer-logo">
+                    <p class="footer-description">
+                        <span class="lang-en">Transforming lives through science-backed nutrition and wellness solutions.</span>
+                        <span class="lang-es" style="display:none;">Transformando vidas a través de nutrición y soluciones de bienestar respaldadas por la ciencia.</span>
+                    </p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="link-group">
+                        <h5 class="lang-en">Product</h5>
+                        <h5 class="lang-es" style="display:none;">Producto</h5>
+                        <a href="#" class="footer-link">
+                            <span class="lang-en">Ingredients</span>
+                            <span class="lang-es" style="display:none;">Ingredientes</span>
+                        </a>
+                        <a href="#" class="footer-link">
+                            <span class="lang-en">Science</span>
+                            <span class="lang-es" style="display:none;">Ciencia</span>
+                        </a>
+                        <a href="#" class="footer-link">
+                            <span class="lang-en">Reviews</span>
+                            <span class="lang-es" style="display:none;">Reseñas</span>
+                        </a>
+                    </div>
+                    
+                    <div class="link-group">
+                        <h5 class="lang-en">Support</h5>
+                        <h5 class="lang-es" style="display:none;">Soporte</h5>
+                        <a href="#" class="footer-link">
+                            <span class="lang-en">Contact Us</span>
+                            <span class="lang-es" style="display:none;">Contáctanos</span>
+                        </a>
+                        <a href="#" class="footer-link">
+                            <span class="lang-en">FAQ</span>
+                            <span class="lang-es" style="display:none;">Preguntas</span>
+                        </a>
+                        <a href="#" class="footer-link">
+                            <span class="lang-en">Shipping</span>
+                            <span class="lang-es" style="display:none;">Envío</span>
+                        </a>
+                    </div>
+                    
+                    <div class="link-group">
+                        <h5 class="lang-en">Legal</h5>
+                        <h5 class="lang-es" style="display:none;">Legal</h5>
+                        <a href="#" class="footer-link">
+                            <span class="lang-en">Privacy Policy</span>
+                            <span class="lang-es" style="display:none;">Política de Privacidad</span>
+                        </a>
+                        <a href="#" class="footer-link">
+                            <span class="lang-en">Terms of Service</span>
+                            <span class="lang-es" style="display:none;">Términos de Servicio</span>
+                        </a>
+                        <a href="#" class="footer-link">
+                            <span class="lang-en">Refund Policy</span>
+                            <span class="lang-es" style="display:none;">Política de Reembolso</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="copyright">
+                    <span class="lang-en">&copy; 2025 VitalLife. All rights reserved.</span>
+                    <span class="lang-es" style="display:none;">&copy; 2025 VitalLife. Todos los derechos reservados.</span>
+                </p>
+                
+                <p class="disclaimer">
+                    <span class="lang-en">*These statements have not been evaluated by the Food and Drug Administration. This product is not intended to diagnose, treat, cure, or prevent any disease.</span>
+                    <span class="lang-es" style="display:none;">*Estas declaraciones no han sido evaluadas por la Administración de Alimentos y Medicamentos. Este producto no está destinado a diagnosticar, tratar, curar o prevenir ninguna enfermedad.</span>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Video Modal -->
+    <div id="videoModal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <div class="video-container">
+                <iframe src="" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript Files -->
+    <script src="main.js"></script>
+    <script src="translation.js"></script>
+    <script src="tracking.js"></script>
+    <script src="google-analytics.js"></script>
+    <script src="meta-pixel.js"></script>
+</body>
+</html>
